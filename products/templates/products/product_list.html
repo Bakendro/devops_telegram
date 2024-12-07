@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Document</title>
+</head>
+<body>
+    <h1>список товаров</h1>
+    <ul>
+        {% for product in products %}
+        <li>
+            <strong>{{product.name}}</strong>: {{ product.price }} тг
+            <p>{{ product.description }}</p>
+        </li>
+        {% endfor %}
+    </ul>
+    
+</body>
+</html>
